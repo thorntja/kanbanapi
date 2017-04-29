@@ -26,7 +26,7 @@ router.get('/', function(req, res) {
 });
 
 // sends card count
-router.get('/number', function(req, res){
+router.get('/count', function(req, res){
   Card.count(function(err, number){
     if(err)
       res.send(err);
